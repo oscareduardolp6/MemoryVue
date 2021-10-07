@@ -3,7 +3,7 @@ const app = new Vue({
     data: {
         fase: 1, 
         numberOfWords: 1, 
-        currentWord: 'Probando', 
+        currentWord: '', 
         counter: 0, 
         words: [],
         answers: []

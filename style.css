@@ -1,0 +1,47 @@
+body {
+    margin-left: 25%;
+    margin-top: 5%;
+    background-color: rgb(30, 32, 32);
+    color: white;
+}
+
+.myInput {
+    margin-top: 1em;
+    width: 25%;
+    margin-left: 20%;
+}
+
+.word {
+    margin-left: 25%;
+}
+
+.myButtons {
+    width: 10em;
+    margin-left: 2em;
+}
+
+.divButtons {
+    margin-left: 2em;
+    width: 60%;
+}
+
+.myBtn {
+    width: 5em;
+}
+
+.compareButton {
+    display: flex;
+    justify-content: center;
+}
+
+.correct {
+    background-color: rgb(47, 197, 79);
+}
+
+.incorrect {
+    background-color: rgb(226, 39, 39);
+}
+
+#saveWordButton {
+    margin-left: 2em;
+}
