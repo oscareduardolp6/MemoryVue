@@ -6,7 +6,8 @@ const app = new Vue({
         currentWord: '', 
         counter: 0, 
         words: [],
-        answers: []
+        answers: [], 
+        correctAnswer: false
     }, 
     computed: {
     },
@@ -40,5 +41,6 @@ const app = new Vue({
                 const styleClass = result ? 'correct' : 'incorrect'; 
                 inputs[index].classList.add(styleClass); 
             }
+            this.correctAnswer = true; 
         }
 } });  

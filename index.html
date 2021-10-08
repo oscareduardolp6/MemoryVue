@@ -39,9 +39,11 @@
             </div>
         </div>
         <div v-show="fase == 3" id="divFase3">
-            <ol>
-                <li v-for="(word, index) in words">
-                    <input type="text" class="form-control myInput" v-model="answers[index]">
+            <ol class="container myResult">
+                <li v-for="(word, index) in words" class="row">
+                    <h6 class="col">{{index + 1}} .</h6>
+                    <input type="text" class="form-control myInput" v-model="answers[index]" class="col">
+                    <h6 v-show="correctAnswer" class="col">{{words[index]}}</h6>
                 </li>
             </ol>
             <div class="compareButton">

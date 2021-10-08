@@ -5,6 +5,11 @@ body {
     color: white;
 }
 
+.myResult{
+    width: 50%; 
+    margin-left: 0%;
+}
+
 .myInput {
     margin-top: 1em;
     width: 25%;
