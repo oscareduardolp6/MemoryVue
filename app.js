@@ -35,8 +35,8 @@ const app = new Vue({
             const div3 = document.querySelector('#divFase3');
             const inputs = [...div3.querySelectorAll('input')]; 
             for (let index = 0; index < (this.numberOfWords * 1); index++) {
-                const originalWord = this.words[index];                                                                             
-                const myWord = this.answers[index].toLowerCase().trim(); 
+                const originalWord = this.words[index].toLowerCase().trim();                                                                             
+                const myWord = this.answers[index].toLowerCase().trim() ?? ''; 
                 const result = originalWord == myWord || myWord == ''; 
                 const styleClass = result ? 'correct' : 'incorrect'; 
                 inputs[index].classList.add(styleClass); 
