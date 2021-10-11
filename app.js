@@ -7,7 +7,14 @@ const app = new Vue({
         counter: 0, 
         words: [],
         answers: [], 
-        correctAnswer: false
+        correctAnswer: false, 
+        campo: document.querySelector('#labelX').innerText
+    }, 
+    watch:{
+        campo: function (element) {
+            console.log(element);
+        }
+
     }, 
     methods: {
         updateFase(){

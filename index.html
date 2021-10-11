@@ -50,8 +50,19 @@
                 <button class="btn btn-primary" @click="compare">Comparar</button>
             </div>
         </div>
+        <div>
+            <h3 id="labelX">
+                Etiqueta X
+            </h3>
+            <input type="text" id="field" > 
+        </div>
     </div>
 </body>
+<script>
+    const moveValue = (e) => document.querySelector('#labelX').innerText = e.target.value; 
+
+    document.querySelector('#field').addEventListener('change', moveValue); 
+</script>
 <script src="dictionary.js"></script>
 <script src="app.js"></script>
 </html>
