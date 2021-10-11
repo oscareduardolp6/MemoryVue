@@ -9,8 +9,6 @@ const app = new Vue({
         answers: [], 
         correctAnswer: false
     }, 
-    computed: {
-    },
     methods: {
         updateFase(){
             this.fase++;
